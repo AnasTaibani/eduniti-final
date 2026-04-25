@@ -18,6 +18,7 @@ distro==1.9.0
 dnspython==2.8.0
 ecdsa==0.19.2
 email-validator==2.3.0
+edge-tts==6.1.12
 
 faiss-cpu==1.13.2
 fastapi==0.110.1
