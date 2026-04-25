@@ -1,0 +1,111 @@
+{
+  "theme": "light",
+  "archetype": "Archetype 6: Vibrant Play (Youth/Education) + Archetype 3 (Pastel & Soft)",
+  "typography": {
+    "fonts": {
+      "heading": "Outfit, sans-serif",
+      "body": "Nunito, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl font-bold tracking-tight text-slate-900",
+      "h2": "text-2xl sm:text-3xl font-semibold tracking-tight text-slate-800",
+      "h3": "text-xl sm:text-2xl font-medium text-slate-800",
+      "h4": "text-lg font-medium text-slate-700",
+      "body": "text-base text-slate-600 leading-relaxed",
+      "small": "text-sm text-slate-500 uppercase tracking-wider"
+    }
+  },
+  "colors": {
+    "css_variables_update_required": true,
+    "palette": {
+      "background": "#F8FAFC",
+      "foreground": "#0F172A",
+      "card": "#FFFFFF",
+      "card-foreground": "#0F172A",
+      "primary": "#0EA5E9",
+      "primary-foreground": "#FFFFFF",
+      "secondary": "#F59E0B",
+      "secondary-foreground": "#FFFFFF",
+      "muted": "#F1F5F9",
+      "muted-foreground": "#64748B",
+      "accent": "#F0F9FF",
+      "accent-foreground": "#0F172A",
+      "destructive": "#EF4444",
+      "destructive-foreground": "#FFFFFF",
+      "success": "#10B981",
+      "success-foreground": "#FFFFFF",
+      "border": "#E2E8F0",
+      "input": "#E2E8F0",
+      "ring": "#0EA5E9"
+    }
+  },
+  "spacing_and_layout": {
+    "container_padding": "p-6 sm:p-8 lg:p-12",
+    "border_radius": {
+      "base": "rounded-2xl",
+      "large": "rounded-3xl",
+      "button": "rounded-full"
+    },
+    "dashboard_grid": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6",
+    "bento_grid": "grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-6"
+  },
+  "components": {
+    "chat_interface": {
+      "ai_message": "bg-sky-50 border border-sky-100 rounded-2xl rounded-tl-sm p-4 text-slate-700 shadow-sm",
+      "user_message": "bg-white border border-slate-200 rounded-2xl rounded-tr-sm p-4 text-slate-700 shadow-sm",
+      "input_area": "bg-white border-t border-slate-200 p-4 sticky bottom-0"
+    },
+    "cards": {
+      "default": "bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all duration-200 hover:-translate-y-1",
+      "interactive": "bg-white rounded-2xl border-2 border-transparent hover:border-sky-500 transition-all cursor-pointer shadow-sm"
+    },
+    "buttons": {
+      "primary": "bg-sky-500 hover:bg-sky-600 text-white rounded-full px-6 py-2.5 font-medium transition-colors focus:ring-2 focus:ring-sky-300 focus:ring-offset-2",
+      "secondary": "bg-amber-500 hover:bg-amber-600 text-white rounded-full px-6 py-2.5 font-medium transition-colors focus:ring-2 focus:ring-amber-300 focus:ring-offset-2",
+      "outline": "border-2 border-slate-200 hover:border-sky-500 text-slate-700 hover:text-sky-600 bg-transparent rounded-full px-6 py-2.5 font-medium transition-all"
+    }
+  },
+  "motion_and_interactions": {
+    "hover_state": "transition-all duration-200 ease-in-out",
+    "page_transition": "animate-in fade-in slide-in-from-bottom-4 duration-500",
+    "staggered_list": "animate-in slide-in-from-bottom-2 fade-in duration-300 fill-mode-both"
+  },
+  "icons_and_assets": {
+    "icon_library": "lucide-react",
+    "illustration_style": "Soft, friendly, using SVG illustrations or bright stock photos."
+  },
+  "media": {
+    "hero_image": {
+      "url": "https://images.pexels.com/photos/6958520/pexels-photo-6958520.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Young man using laptop and headphones for online learning, representing an engaged student.",
+      "category": "hero"
+    },
+    "study_image_1": {
+      "url": "https://images.unsplash.com/photo-1513258496099-48168024aec0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNTl8MHwxfHNlYXJjaHwyfHxzdHVkZW50JTIwbGFwdG9wfGVufDB8fHx8MTc3NTgxNzkxNXww&ixlib=rb-4.1.0&q=85",
+      "description": "Student studying with Macbook.",
+      "category": "dashboard_banner"
+    },
+    "study_image_2": {
+      "url": "https://images.pexels.com/photos/3775128/pexels-photo-3775128.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Woman using laptop, studying online.",
+      "category": "auth_background"
+    }
+  },
+  "accessibility": {
+    "contrast_ratio": "Ensure >4.5:1 for normal text. Avoid light text on light yellow backgrounds.",
+    "focus_states": "Visible focus rings on all interactive elements (focus:ring-2 focus:ring-sky-300).",
+    "test_ids": "Required on all buttons, inputs, links, and key UI areas (e.g., data-testid='chat-submit-button')."
+  },
+  "instructions_to_main_agent": [
+    "Load 'Outfit' and 'Nunito' fonts from Google Fonts in index.html.",
+    "Update /app/frontend/src/index.css to implement the provided colors (convert HEX to HSL variables if using shadcn).",
+    "Use 'Outfit' for headings (h1, h2, h3) and 'Nunito' for the body text globally.",
+    "Apply 'rounded-2xl' or 'rounded-3xl' universally to cards, inputs, and modals for a friendly EdTech feel.",
+    "Implement the Chat Interface using the defined 'ai_message' and 'user_message' styling, providing a clear visual contrast between the AI Tutor and User.",
+    "Use Recharts for the Progress Dashboard. Apply the Sky Blue (#0EA5E9) and Amber (#F59E0B) colors to charts.",
+    "For the dashboard layout, utilize the 'bento_grid' approach, emphasizing asymmetry and clean negative space.",
+    "Never use pure black or grey (#000000 or #808080). Always use tinted slates from Tailwind (slate-50 to slate-900).",
+    "Use the provided image URLs exclusively for hero sections, dashboard banners, and auth backgrounds. No placeholder images are allowed."
+  ]
+}
